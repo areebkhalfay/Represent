@@ -25,7 +25,8 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 
 public class ShowRepsAddress extends AppCompatActivity {
-    String url = "https://www.googleapis.com/civicinfo/v2/representatives?key=AIzaSyBwVVygpmWGOqADxipiBs7lLmUK9u7B0Ws&address=";
+    String api_key = "";
+    String url = "https://www.googleapis.com/civicinfo/v2/representatives?key=" + api_key + "&address=";
     public static final String EXTRA_MESSAGE = "com.ShowMoreInfo.input";
     public String full_message;
     public String message;
