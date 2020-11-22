@@ -2,6 +2,8 @@
 
 Implementation of Prog 02: Represent!
 
+Reminder - Need to input Google api_key in Java files to get functionality.
+
 ## Author
 
 Areeb Khalfay (areebk@berkeley.edu)
