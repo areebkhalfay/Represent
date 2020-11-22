@@ -122,7 +122,8 @@ public class MainActivity extends AppCompatActivity {
         double random_long = ThreadLocalRandom.current().nextDouble(long_min, long_max);
 
         mQueue = Volley.newRequestQueue(this);
-        String url = "https://maps.googleapis.com/maps/api/geocode/json?latlng=" + random_lat + "," + random_long +  "&key=AIzaSyBwVVygpmWGOqADxipiBs7lLmUK9u7B0Ws";
+        String api_key = "";
+        String url = "https://maps.googleapis.com/maps/api/geocode/json?latlng=" + random_lat + "," + random_long +  "&key=" + api_key;
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
