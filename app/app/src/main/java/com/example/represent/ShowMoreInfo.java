@@ -29,7 +29,8 @@ public class ShowMoreInfo extends AppCompatActivity {
     private Integer index;
     private String message;
     private String senator_or_representative;
-    String url = "https://www.googleapis.com/civicinfo/v2/representatives?key=AIzaSyBwVVygpmWGOqADxipiBs7lLmUK9u7B0Ws&address=";
+    String api_key = "";
+    String url = "https://www.googleapis.com/civicinfo/v2/representatives?key=" + api_key + "&address=";
     private RequestQueue mQueue;
     private Boolean random;
 
